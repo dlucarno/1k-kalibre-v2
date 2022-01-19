@@ -1,0 +1,85 @@
+:root {
+  // colors
+  --bg: #FAFAFA;
+  --color-white: #fff;
+  --color-red: #F05B5B;
+  --color-blue: #5175FF;
+  --color-black: #25293A;
+  --color-dark-gray: #333950;
+  --color-light-blue: #829CFF;
+  --color-light-gray: #747B95;
+
+  // font weights
+  --weight-bold: 700;
+  --weight-regular: 400;
+
+  // design elements
+  --transition: 0.3s ease-in-out;
+  --outline: 2px dotted var(--color-blue);
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: var(--bg);
+  color: var(--color-dark-gray);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+#__next {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
+}
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+}
