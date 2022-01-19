@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+
 export default function SignUpHero() {
   return (
     <section className="signup-hero">
@@ -12,8 +13,8 @@ export default function SignUpHero() {
             delay: 0.5
         }}}
         className="container container--signup-hero">
-        <h1 className="t-h1">Work smarter. Save time.</h1>
-        <p className="t-body1 t-light-gray signup-hero__body">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+        <h1 className="t-h1">1K Kalibre - Colorée</h1>
+        <p className="t-body1 t-light-gray signup-hero__body">1K Kalibre voudrait permettre à certaine personne de rejoindre son fan club afin de faire partie des personne qui écouterons le morceau avant sa sortie officielle.</p>
       </motion.div>
     </section>
   )

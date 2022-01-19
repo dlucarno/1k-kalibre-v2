@@ -7,7 +7,7 @@ export default function Layout({
   children,
   isSignUp = false,
   isHomepage = false,
-  title = 'Frontend Mentor | Officelite coming soon site'
+  title = '1K KALIBRE | Accueil'
 }) {
   const mainClasses = clsx({
     'main': true,

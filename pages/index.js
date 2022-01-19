@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout isHomepage={true}>
       <HomeHero />      
-      <HomePlans />
+      {/* <HomePlans /> */}
       <HomeCountDown isStatic={false} />
     </Layout>
   )

@@ -25,31 +25,25 @@ export default function SignUpForm() {
       <Formik
         initialValues={{
           name: '',
-          emailAddress: '',
-          plan: 'Basic Pack',
+          prenom: '',
           phoneNumber: '',
-          companyName: ''
         }}
         validationSchema={SignupSchema}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
           }, 400);
         }}
       >
         {({ errors, touched }) => (
           <Form className="signup-form">
-            <label className="sr-only" htmlFor="name">name</label>
-            <Field name="name" placeholder="Name" className={errors.name && touched.name ? 'error': ''} />
-            <label className="sr-only" htmlFor="emailAddress">Email Address</label>
-            <Field name="emailAddress" placeholder="Email Address" className={errors.emailAddress && touched.emailAddress ? 'error': ''} />
-            <label className="sr-only" htmlFor="phoneNumber">Phone Number</label>
-            <PlanSelector />
-            <Field name="phoneNumber" placeholder="Phone Number" className={errors.phoneNumber && touched.phoneNumber ? 'error': ''} />
-            <label className="sr-only" htmlFor="companyName">Company</label>
-            <Field name="companyName" placeholder="Company" className={errors.companyName && touched.companyName ? 'error': ''} />
-            <button className="btn btn--blue btn--blue--signup" type="submit">Get on the list</button>
+            <label className="sr-only" htmlFor="name">Nom</label>
+            <Field name="name" placeholder="Nom" className={errors.name && touched.name ? 'error': ''} />
+            <label className="sr-only" htmlFor="name">Prénom</label>
+            <Field name="prenom" placeholder="Prénom" className={errors.name && touched.name ? 'error': ''} />
+            <label className="sr-only" htmlFor="phoneNumber">Numéro Whatsapp</label>
+            <Field name="phoneNumber" placeholder="Numéro Whatsapp" className={errors.phoneNumber && touched.phoneNumber ? 'error': ''} />
+            <button className="btn btn--blue btn--blue--signup" type="submit">Rejoindre la liste d'attente</button>
           </Form>
         )}
       </Formik>

@@ -6,7 +6,7 @@ export default function StaticCountDown({ isDark }) {
     <div className={staticCountdownClasses}>
       <div className="static-countdown__card">
         <p className="t-counter-number static-countdown__card__number">47</p>
-        <p className="t-counter-unit">days</p>
+        <p className="t-counter-unit">jours</p>
       </div>
       <div className="static-countdown__card">
         <p className="t-counter-number static-countdown__card__number">07</p>
