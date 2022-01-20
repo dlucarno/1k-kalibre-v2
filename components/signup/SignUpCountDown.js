@@ -4,7 +4,7 @@ import DynamicCountDown from '../DynamicCountDown'
 import { motion } from 'framer-motion'
 
 export default function SignUpCountDown({ isStatic }) {
-  const comingDate = new Date(Date.now() + 15 * 24 * 57 * 60 * 1000)
+  const comingDate = new Date(Date.now() + 14 * 24 * 57 * 60 * 1000)
   return (
     <motion.section
     initial={{ opacity: 0, x: 90 }}
