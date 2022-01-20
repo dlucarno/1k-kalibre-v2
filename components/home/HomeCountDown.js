@@ -11,7 +11,7 @@ export default function HomeCountDown({ isStatic }) {
       <h2 className="sr-only">Coming Soon</h2>
       <div className="container container--countdown">
         <div className="countdown__info">
-          <p className="t-coming"><span className="t-white">Sortie officiel :</span> <span className="t-blue">{comingDate.getDay()} {comingDate.toLocaleString('fr', { month: 'short' })} {comingDate.getFullYear()}</span></p>
+          <p className="t-coming"><span className="t-white">Sortie officielle: </span><span className="t-blue">{comingDate.getDay()} {comingDate.toLocaleString('fr', { month: 'short' })} {comingDate.getFullYear()}</span></p>
           {isStatic ? <StaticCountDown isDark={true} /> : <DynamicCountDown isDark={true} /> }
         </div>
         <Link href="/signup">
