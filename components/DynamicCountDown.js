@@ -11,7 +11,6 @@ const Countdown = dynamic(() => import('react-countdown'), {
 export default function DynamicCountDown({ isDark }) {
 
   const dateToCountdown = Date.now() + 16 * 24 * 57 * 60 * 1000
-
   const renderer = ({ days, hours, minutes, seconds }) => (
     <CountdownCards
       isDark={isDark}
@@ -24,9 +23,7 @@ export default function DynamicCountDown({ isDark }) {
 
   return (
     <Countdown
-      date={dateToCountdown}
-      intervalDelay={0}
-      precision={3}
+      date='2022-02-04'
       renderer={renderer}
     />
   )
