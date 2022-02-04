@@ -28,7 +28,7 @@ export default function DynamicCountDown({ isDark, countFinish }) {
 
   return (
     <Countdown
-      date='2022-02-04T17:59:00'
+      date='2022-02-04'
       renderer={renderer}
       onComplete={end}
     
