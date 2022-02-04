@@ -412,7 +412,7 @@ button {
   width: 100%;
   margin: 0 auto;
   height: 46.5rem;
-  padding: 2.4rem;
+  /* padding: 2.4rem; */
   max-width: 44.5rem;
   border-radius: 1.3rem;
   background-color: var(--color-white);
