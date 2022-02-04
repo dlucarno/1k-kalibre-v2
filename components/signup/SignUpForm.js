@@ -59,10 +59,11 @@ export default function SignUpForm() {
       >
         {({ errors, touched }) => (
           <Form className="signup-form">
-            <img
+            <Image
                 src='/assets/home/1kkalibre.jpg'
-                width={340}
-                height={390}
+                width={100}
+                height={100}
+                layout='responsive'
             />
             
 
