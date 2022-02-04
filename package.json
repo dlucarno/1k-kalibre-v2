@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.25.0",
     "clsx": "^1.1.1",
     "formik": "^2.2.5",
     "framer-motion": "^2.9.4",
